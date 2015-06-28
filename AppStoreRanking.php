@@ -1,7 +1,6 @@
 <?php
-date_default_timezone_set('Asia/Tokyo');
 
-class AppleRankingXmlDownloader
+class AppStoreRanking
 {
     const SRC_DIR = "./src";
     const OUTPUT_DIR = "./data";
@@ -19,7 +18,7 @@ class AppleRankingXmlDownloader
         'topgrossing',
     ];
 
-// データ格納用ディレクトリが存在しなければ作る
+    // データ格納用ディレクトリが存在しなければ作る
     public function makeOutputDir()
     {
         if (!is_dir(self::OUTPUT_DIR)) {
@@ -46,7 +45,7 @@ class AppleRankingXmlDownloader
 
     private function getOutputFilename($country, $srcPrefix, $category)
     {
-        return sprintf("%s/%s/%s_%s_%s.xml", self::OUTPUT_DIR, $country, $srcPrefix, $category, date('Ymd'));
+        return sprintf("%s/%s/%s_%s_%s.xml", self::OUTPUT_DIR, $country, $srcPrefix, $category, date('YmdHis'));
     }
 
     public function downloadXml()
@@ -66,6 +65,3 @@ class AppleRankingXmlDownloader
     }
 }
 
-$downloader = new AppleRankingXmlDownloader();
-$downloader->makeOutputDir();
-$downloader->downloadXml();
