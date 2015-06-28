@@ -1,5 +1,5 @@
 <?php
-require 'AppStoreRanking.php';
+require 'class/AppStoreRanking.php';
 
 $downloader = new AppStoreRanking();
 $downloader->makeOutputDir();
