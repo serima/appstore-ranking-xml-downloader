@@ -1,6 +1,6 @@
 <?php
-require 'class/AppStoreRanking.php';
+require 'class/Sylvan.php';
 
-$downloader = new AppStoreRanking();
-$downloader->makeOutputDir();
-$downloader->downloadXml();
+$sylvan = new Sylvan();
+$sylvan->makeOutputDir();
+$sylvan->downloadXml();

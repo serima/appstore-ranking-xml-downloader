@@ -1,6 +1,6 @@
 <?php
 
-class AppStoreRanking
+class Sylvan
 {
     const SRC_DIR = "./src";
     const OUTPUT_DIR = "./data";
