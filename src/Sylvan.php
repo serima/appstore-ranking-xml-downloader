@@ -2,8 +2,8 @@
 
 class Sylvan
 {
-    const SRC_DIR = "./src";
-    const OUTPUT_DIR = "./data";
+    const SRC_DIR = "./data";
+    const OUTPUT_DIR = "./output";
 
     private $countries = [
         'jp',
