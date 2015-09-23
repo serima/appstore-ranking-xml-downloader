@@ -1,4 +1,4 @@
-<?php
+<?php namespace Serima\Sylvan;
 
 class Sylvan
 {
@@ -38,7 +38,7 @@ class Sylvan
         return sprintf("%s/%s_%s.list", self::SRC_DIR, $country, $srcPrefix);
     }
 
-    private function getWgetCommand($xmlUrl, $outputFilename)
+    public function getWgetCommand($xmlUrl, $outputFilename)
     {
         return sprintf("wget %s -O %s", $xmlUrl, $outputFilename);
     }
