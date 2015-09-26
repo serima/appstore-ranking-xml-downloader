@@ -7,9 +7,6 @@ class Sylvan
 
     private $countries = [
         'jp',
-        'us',
-        'cn',
-        'kr',
     ];
 
     private $srcPrefix = [

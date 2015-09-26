@@ -1,71 +1,71 @@
 {
   "all" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/json"
   },
   "newsstand" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6021/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6021/json"
   },
   "entertainment" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6016/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6016/json"
   },
   "catalog" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6022/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6022/json"
   },
   "game" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6014/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6014/json"
   },
   "sports" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6004/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6004/json"
   },
   "sns" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6005/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6005/json"
   },
   "navigation" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6010/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6010/json"
   },
   "news" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6009/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6009/json"
   },
   "business" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6000/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6000/json"
   },
   "finance" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6015/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6015/json"
   },
   "book" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6018/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6018/json"
   },
   "health" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6013/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6013/json"
   },
   "music" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6011/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6011/json"
   },
   "medical" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6020/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6020/json"
   },
   "utility" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6002/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6002/json"
   },
   "lifestyle" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6012/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6012/json"
   },
   "lifehack" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6007/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6007/json"
   },
   "photo" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6008/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6008/json"
   },
   "weather" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6001/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6001/json"
   },
   "education" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6017/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6017/json"
   },
   "travel" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6003/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6003/json"
   },
   "dictionary" : {
-    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6006/xml"
+    "url" : "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6006/json"
   }
 }
