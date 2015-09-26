@@ -1,64 +1,34 @@
 <?php namespace Serima\Sylvan;
 
+use Monolog\Logger;
+
 class Sylvan
 {
     const SRC_DIR = "./data";
-    const OUTPUT_DIR = "./output";
 
-    private $countries = [
-        'jp',
-    ];
+    private $logger;
 
-    private $srcPrefix = [
-        'topfree',
-        'toppaid',
-        'topgrossing',
-    ];
-
-    // データ格納用ディレクトリが存在しなければ作る
-    public function makeOutputDir()
+    public function __construct()
     {
-        if (!is_dir(self::OUTPUT_DIR)) {
-            mkdir(self::OUTPUT_DIR, 0777);
-        }
-
-        foreach ($this->countries as $country) {
-            $chkDir = self::OUTPUT_DIR . '/' . $country;
-            if (!is_dir($chkDir)) {
-                mkdir($chkDir, 0777);
-            }
-        }
+        $this->logger = new Logger('Sylvan');
     }
 
-    private function getInputFilename($country, $srcPrefix)
+    public function getInputFilename($country, $category)
     {
-        return sprintf("%s/%s_%s.list", self::SRC_DIR, $country, $srcPrefix);
+        return sprintf("%s/%s/%s.json", self::SRC_DIR, $country, $category);
     }
 
-    public function getWgetCommand($xmlUrl, $outputFilename)
+    public function getUrl($country, $category, $genre)
     {
-        return sprintf("wget %s -O %s", $xmlUrl, $outputFilename);
+        $filename = $this->getInputFilename($country, $category);
+        $json = json_decode(file_get_contents($filename));
+        return $json->$genre->url;
     }
 
-    private function getOutputFilename($country, $srcPrefix, $category)
+    public function getJson($country, $category, $genre)
     {
-        return sprintf("%s/%s/%s_%s_%s.xml", self::OUTPUT_DIR, $country, $srcPrefix, $category, date('YmdHis'));
-    }
-
-    public function downloadXml()
-    {
-        foreach ($this->countries as $country) {
-            foreach ($this->srcPrefix as $srcPrefix) {
-                $contents = @file($this->getInputFilename($country, $srcPrefix));
-                foreach ($contents as $line) {
-                    list($category, $xmlUrl) = explode("," ,$line);
-                    $category = trim($category);
-                    $xmlUrl = trim($xmlUrl);
-                    $outputFilename = $this->getOutputFilename($country, $srcPrefix, $category);
-                    system($this->getWgetCommand($xmlUrl, $outputFilename));
-                }
-            }
-        }
+        $url = $this->getUrl($country, $category, $genre);
+        return json_decode(file_get_contents($url));
     }
 }
 
