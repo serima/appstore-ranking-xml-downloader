@@ -1,5 +1,6 @@
 <?php namespace Serima\Sylvan;
 
+use InvalidArgumentException;
 use Monolog\Logger;
 
 class Sylvan
@@ -15,13 +16,24 @@ class Sylvan
 
     public function getInputFilename($country, $category)
     {
-        return sprintf("%s/%s/%s.json", self::SRC_DIR, $country, $category);
+        $fileName = sprintf("%s/%s/%s.json", self::SRC_DIR, $country, $category);
+
+        if (! file_exists($fileName)) {
+            throw new InvalidArgumentException('Not found input file. ('.$fileName.')');
+        }
+
+        return $fileName;
     }
 
     public function getUrl($country, $category, $genre)
     {
         $filename = $this->getInputFilename($country, $category);
         $json = json_decode(file_get_contents($filename));
+
+        if (! isset($json->$genre->url)) {
+            throw new InvalidArgumentException('Not found specified genre. ('.$genre.')');
+        }
+
         return $json->$genre->url;
     }
 

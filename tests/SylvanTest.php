@@ -3,7 +3,7 @@ use Serima\Sylvan\Sylvan;
 
 class SylvanTest extends PHPUnit_Framework_TestCase {
 
-    public function testSylvan_getInputFilename()
+    public function testSylvan_getInputFilename_success()
     {
         $sylvan = new Sylvan();
         $expected = './data/jp/paid.json';
@@ -11,7 +11,17 @@ class SylvanTest extends PHPUnit_Framework_TestCase {
         $this->assertSame($expected, $actual);
     }
 
-    public function testSylvan_getUrl()
+    /**
+     * @expectedException InvalidArgumentException
+     * @expectedExceptionMessage Not found input file. (./data/xx/xxxx.json)
+     */
+    public function testSylvan_getInputFilename_exception()
+    {
+        $sylvan = new Sylvan();
+        $sylvan->getInputFilename('xx', 'xxxx');
+    }
+
+    public function testSylvan_getUrl_success()
     {
         $sylvan = new Sylvan();
         $expected = "http://itunes.apple.com/jp/rss/topfreeapplications/limit=100/genre=6021/json";
@@ -19,10 +29,13 @@ class SylvanTest extends PHPUnit_Framework_TestCase {
         $this->assertSame($expected, $actual);
     }
 
-    public function testSylvan_getJson()
+    /**
+     * @expectedException InvalidArgumentException
+     * @expectedExceptionMessage Not found specified genre. (xxxx)
+     */
+    public function testSylvan_getUrl_exception()
     {
         $sylvan = new Sylvan();
-        $json = $sylvan->getJson('jp', 'free', 'all');
-        var_dump($json);
+        $sylvan->getUrl('jp', 'free', 'xxxx');
     }
 }
