@@ -1,0 +1,71 @@
+{
+  "all" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/xml"
+  },
+  "newsstand" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6021/xml"
+  },
+  "entertainment" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6016/xml"
+  },
+  "catalog" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6022/xml"
+  },
+  "game" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6014/xml"
+  },
+  "sports" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6004/xml"
+  },
+  "sns" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6005/xml"
+  },
+  "navigation" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6010/xml"
+  },
+  "news" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6009/xml"
+  },
+  "business" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6000/xml"
+  },
+  "finance" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6015/xml"
+  },
+  "book" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6018/xml"
+  },
+  "health" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6013/xml"
+  },
+  "music" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6011/xml"
+  },
+  "medical" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6020/xml"
+  },
+  "utility" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6002/xml"
+  },
+  "lifestyle" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6012/xml"
+  },
+  "lifehack" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6007/xml"
+  },
+  "photo" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6008/xml"
+  },
+  "weather" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6001/xml"
+  },
+  "education" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6017/xml"
+  },
+  "travel" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6003/xml"
+  },
+  "dictionary" : {
+    "url" : "http://itunes.apple.com/jp/rss/topgrossingapplications/limit=100/genre=6006/xml"
+  }
+}
