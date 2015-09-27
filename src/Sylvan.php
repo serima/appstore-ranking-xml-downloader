@@ -7,13 +7,24 @@ class Sylvan
 {
     const SRC_DIR = "./data";
 
+    /**
+     * @var Logger
+     */
     private $logger;
 
-    public function __construct()
+    /**
+     * @param Logger $logger
+     */
+    public function __construct(Logger $logger)
     {
-        $this->logger = new Logger('Sylvan');
+        $this->logger = $logger;
     }
 
+    /**
+     * @param $country
+     * @param $category
+     * @return string
+     */
     public function getInputFilename($country, $category)
     {
         $fileName = sprintf("%s/%s/%s.json", self::SRC_DIR, $country, $category);
@@ -25,6 +36,12 @@ class Sylvan
         return $fileName;
     }
 
+    /**
+     * @param $country
+     * @param $category
+     * @param $genre
+     * @return string
+     */
     public function getUrl($country, $category, $genre)
     {
         $filename = $this->getInputFilename($country, $category);
@@ -37,6 +54,12 @@ class Sylvan
         return $json->$genre->url;
     }
 
+    /**
+     * @param $country
+     * @param $category
+     * @param $genre
+     * @return mixed
+     */
     public function getJson($country, $category, $genre)
     {
         $url = $this->getUrl($country, $category, $genre);
